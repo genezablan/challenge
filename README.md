@@ -15,13 +15,13 @@ const userArr = [
   { first_name: 'Elland', points: 15, gender: 'female' },
 ] 
 
-1) Create a function that has a parameter of gender of the user, if the parameter is male the function would return an array of all male users. The array is sorted by the number of points from the lowest to the highest point.
+1. Create a function that has a parameter of gender of the user, if the parameter is male the function would return an array of all male users. The array is sorted by the number of points from the lowest to the highest point.
 
-2) Create a function that will convert the returned array to comma separated string.
+2. Create a function that will convert the returned array to comma separated string.
 for e.i. [a,b,c] ==> a,b,c
 
 
-3) Consider the following example of a 'callback hell'.
+3. Consider the following example of a 'callback hell'.
 
   User.findOne({ id: id }, (user) => {
    Comments.findOne({ user_id: user.id }, (user) => {
@@ -34,7 +34,7 @@ for e.i. [a,b,c] ==> a,b,c
   a) Convert this to more readable code. Hence you can use Promise.
   
   
-  4) 
+ 4. 
   Table: customer_points
   id: integer PRIMARY KEY,
   type: string,
@@ -60,10 +60,10 @@ for e.i. [a,b,c] ==> a,b,c
   
   - Each user has many customer point and customer belongs to user
   
-  a) Write a query that gets all total points per day of the user with customer point type 'scan_earns'.
+  a. Write a query that gets all total points per day of the user with customer point type 'scan_earns'.
     The requery result should include these fields (first_name, last_name, total_points, Date).
     
-  b) Write a query that gets all user who earn points more than the earn_frequency in the settings. 
+  b. Write a query that gets all user who earn points more than the earn_frequency in the settings. 
     The query result sould include these fields (first_name, last_name, user_id).
   
   
