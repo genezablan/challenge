@@ -69,6 +69,6 @@ for e.i. [a,b,c] ==> a,b,c
     
   b. Write a query that gets all user who earn points more than the earn_frequency in the settings. 
     The query result sould include these fields (first_name, last_name, user_id).
-  [Bonus]
-  c. Write a query that gets all the user along with their points with the column last_scan_delay that is the delay on seconds from the last record 
+
+  c.   [Bonus] Write a query that gets all the user along with their points with the column last_scan_delay that is the delay on seconds from the last record 
     The query result sould include these fields (first_name, last_name, user_id, last_scan_delay)
