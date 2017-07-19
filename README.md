@@ -1,7 +1,7 @@
 
 # Technical Challenge
 
-## Propuse: To evalutae applicant's basic knowledge in NodeJS and SQL
+## Purpose: To evaluate applicant's basic knowledge in NodeJS and SQL
 
 ### Tasks
 
@@ -23,13 +23,15 @@ for e.i. [a,b,c] ==> a,b,c
 
 3. Consider the following example of a 'callback hell'.
 
-  User.findOne({ id: id }, (user) => {
-   Comments.findOne({ user_id: user.id }, (user) => {
-    Links.find({ user_id: user.id }, (link) => {
+  ```
+   User.findOne({ id: id }, (user) => {
+    Comments.findOne({ user_id: user.id }, (user) => {
+     Links.find({ user_id: user.id }, (link) => {
       console.log('user comment link', link);
     });
    }); 
   });
+  ```
   
   a) Convert this to more readable code. Hence you can use Promise.
   
